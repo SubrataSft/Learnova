@@ -50,7 +50,7 @@ class _SearchScreenState extends State<SearchScreen> {
                       ),
                     ),
                     suffixIcon: Container(
-                      padding: EdgeInsets.all(5),
+                      padding: EdgeInsets.all(12),
                       decoration: BoxDecoration(
                         color: Colors.blue,
                         borderRadius: BorderRadius.circular(10),

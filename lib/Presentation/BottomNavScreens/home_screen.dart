@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../widgets/categoris_item.dart';
+import '../Screens/search_screen.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -30,8 +31,10 @@ class _HomeScreenState extends State<HomeScreen> {
           appBar: AppBar(
             automaticallyImplyLeading: false,
             title: const Text("Learn Through Watching Reels"),
-            actions: const [
-              Icon(Icons.search_rounded),
+            actions: [
+              IconButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>SearchScreen()));
+              }, icon: Icon(Icons.search_rounded))
             ],
             bottom: const TabBar(
               isScrollable: true,
