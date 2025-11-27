@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:task/Presentation/Screens/course_details.dart';
 import 'package:task/Presentation/Custom/custom_button.dart';
 import 'package:task/Presentation/Custom/custom_textfield.dart';
 import 'package:task/Presentation/Screens/logIn_screen.dart';
@@ -34,23 +33,26 @@ class SignInScreen extends StatelessWidget {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
 
-            SizedBox(height: 15),
+           
 
-            DefaultTabController(
-              length: 2,
-              child: Column(
-                children: [
-                  TabBar(
-                    dividerColor: Colors.blueGrey,
-                    dividerHeight: 2,
-                    labelColor: Colors.blue,
-                    unselectedLabelColor: Colors.grey,
-                    tabs: [
-                      Tab(text: "Student"),
-                      Tab(text: "Teacher"),
-                    ],
-                  ),
-                ],
+            Padding(
+              padding: const EdgeInsets.all(18.0),
+              child: DefaultTabController(
+                length: 2,
+                child: Column(
+                  children: [
+                    TabBar(
+                      dividerColor: Colors.blueGrey,
+                      dividerHeight: 2,
+                      labelColor: Colors.blue,
+                      unselectedLabelColor: Colors.grey,
+                      tabs: [
+                        Tab(text: "Student"),
+                        Tab(text: "Teacher"),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
 
@@ -82,7 +84,9 @@ class SignInScreen extends StatelessWidget {
                   ),
 
                   SizedBox(height: 25),
-                  CustomButton(text: "Create Account", onPressed: () {  },),
+                  CustomButton(text: "Create Account", onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginScreen()));
+                  },),
                   SizedBox(height: 25),
                   SizedBox(height: 20),
                   Center(

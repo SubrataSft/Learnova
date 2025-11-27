@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:task/Presentation/Custom/custom_button.dart';
-import 'package:task/Presentation/Screens/final_vocabulary_screen.dart';
 
 class FinalVocabularyScreen extends StatefulWidget {
+
   const FinalVocabularyScreen({super.key});
 
   @override
@@ -158,7 +158,7 @@ class _FinalVocabularyScreenState extends State<FinalVocabularyScreen> {
 
                               borderRadius: BorderRadius.circular(50)
                             ),
-                            child: Text("Scary (可怕) 和Frightening (嚇人) 表示狗會讓其他人或動物感到恐懼，這與狗對其他狗的反應不符。"),
+                            child: Text("⦿ Scary (可怕) 和Frightening (嚇人) 表示狗會讓其他人或動物感到恐懼，這與狗對其他狗的反應不符。"),
                           ),
                           SizedBox(height: 12,),
                           Divider(
@@ -172,7 +172,7 @@ class _FinalVocabularyScreenState extends State<FinalVocabularyScreen> {
 
                               borderRadius: BorderRadius.circular(50)
                             ),
-                            child: Text("Scary (可怕) 和Frightening (嚇人) 表示狗會讓其他人或動物感到恐懼，這與狗對其他狗的反應不符。"),
+                            child: Text("⦿ Scary (可怕) 和Frightening (嚇人) 表示狗會讓其他人或動物感到恐懼，這與狗對其他狗的反應不符。"),
                           )
 
                         ],

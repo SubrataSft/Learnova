@@ -34,24 +34,27 @@ class LoginScreen extends StatelessWidget {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
 
-            SizedBox(height: 15),
 
-            DefaultTabController(
-              length: 2,
-              child: Column(
-                children: [
-                  TabBar(
-                    isScrollable: true,
-                    tabAlignment: TabAlignment.center,
-                    dividerColor: Colors.blueGrey,
-                    labelColor: Colors.blue,
-                    unselectedLabelColor: Colors.grey,
-                    tabs: [
-                      Tab(text: "Student"),
-                      Tab(text: "Teacher"),
-                    ],
-                  ),
-                ],
+
+            Padding(
+              padding: const EdgeInsets.all(18.0),
+              child: DefaultTabController(
+                length: 2,
+                child: Column(
+                  children: [
+                    TabBar(
+                      isScrollable: true,
+                      tabAlignment: TabAlignment.center,
+                      dividerColor: Colors.blueGrey,
+                      labelColor: Colors.blue,
+                      unselectedLabelColor: Colors.grey,
+                      tabs: [
+                        Tab(text: "Student"),
+                        Tab(text: "Teacher"),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
 
