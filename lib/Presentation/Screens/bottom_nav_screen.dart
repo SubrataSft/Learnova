@@ -42,7 +42,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
           });
         },
         type: BottomNavigationBarType.fixed,
-        items: const [
+        items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled, size: 30),
             label: "",

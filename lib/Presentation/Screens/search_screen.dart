@@ -12,21 +12,22 @@ class _SearchScreenState extends State<SearchScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.arrow_circle_left_outlined),
+        leading: IconButton(onPressed: (){
+          Navigator.pop(context);
+
+        }, icon: Icon(Icons.arrow_circle_left_outlined),),
         title: Text("Back"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(18.0),
-        child:
-        Container(
+        child: Container(
           height: 400,
           width: 390,
           decoration: BoxDecoration(
             color: Colors.white54,
-            borderRadius: BorderRadius.circular(20)
+            borderRadius: BorderRadius.circular(20),
           ),
-          child:
-          Stack(
+          child: Stack(
             children: [
               Positioned(
                 top: 20,
@@ -37,17 +38,11 @@ class _SearchScreenState extends State<SearchScreen> {
                     hintText: "Search",
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(
-                        color: Colors.grey,
-                        width: 2,
-                      ),
+                      borderSide: BorderSide(color: Colors.grey, width: 2),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(14),
-                      borderSide: BorderSide(
-                        color: Colors.blue,
-                        width: 2,
-                      ),
+                      borderSide: BorderSide(color: Colors.blue, width: 2),
                     ),
                     suffixIcon: Container(
                       padding: EdgeInsets.all(12),
@@ -70,12 +65,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 3,
-                      ),
-                    ],
+                    boxShadow: [BoxShadow(color: Colors.grey, blurRadius: 3)],
                   ),
                   alignment: Alignment.centerLeft,
                   padding: EdgeInsets.symmetric(horizontal: 15),
@@ -98,12 +88,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 3,
-                      ),
-                    ],
+                    boxShadow: [BoxShadow(color: Colors.grey, blurRadius: 3)],
                   ),
                   alignment: Alignment.centerLeft,
                   padding: EdgeInsets.symmetric(horizontal: 15),
@@ -127,12 +112,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 3,
-                      ),
-                    ],
+                    boxShadow: [BoxShadow(color: Colors.grey, blurRadius: 3)],
                   ),
                   alignment: Alignment.centerLeft,
                   padding: EdgeInsets.symmetric(horizontal: 15),
@@ -156,12 +136,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 3,
-                      ),
-                    ],
+                    boxShadow: [BoxShadow(color: Colors.grey, blurRadius: 3)],
                   ),
                   alignment: Alignment.centerLeft,
                   padding: EdgeInsets.symmetric(horizontal: 15),
@@ -176,11 +151,9 @@ class _SearchScreenState extends State<SearchScreen> {
                 ),
               ),
 
-              SizedBox(height: 12,),
+              SizedBox(height: 12),
             ],
-          )
-
-
+          ),
         ),
       ),
     );

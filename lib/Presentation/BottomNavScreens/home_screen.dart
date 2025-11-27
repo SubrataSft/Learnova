@@ -85,488 +85,491 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                   SizedBox(height: 20,),
-                  Column(
-                    children: [
-                      Row(
-                        children: [
-                          Column(
-                            children: [
-                              Container(
-                                height: 268,
-                                width: 189,
-                                decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(22)
-                                ),
-                                child:Stack(
-                                  children: [
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Container(
+                                  height: 268,
+                                  width: 189,
+                                  decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(22)
+                                  ),
+                                  child:Stack(
+                                    children: [
 
-                                    Positioned.fill(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(22),
-                                        child: Image.asset(
-                                          "assets/images/firsts.png",
-                                          fit: BoxFit.cover,
+                                      Positioned.fill(
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(22),
+                                          child: Image.asset(
+                                            "assets/images/firsts.png",
+                                            fit: BoxFit.cover,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    Positioned(
-                                      bottom: 8,
-                                      left: 8,
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                            "Vocabulary 101",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 18,
+                                      Positioned(
+                                        bottom: 8,
+                                        left: 8,
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "Vocabulary 101",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                              ),
                                             ),
-                                          ),
-                                          SizedBox(height: 12),
-                                          Row(
-                                            children: [
-                                              CircleAvatar(
-                                                radius: 20,
-                                                backgroundImage: AssetImage("assets/images/imagess.png"),
-                                                backgroundColor: Colors.transparent,
-                                              ),
-                                              SizedBox(width: 8),
-                                              Text(
-                                                "Jessica Roy",
-                                                style: TextStyle(
-                                                  fontSize: 14,
-                                                  color: Colors.white,
+                                            SizedBox(height: 12),
+                                            Row(
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 20,
+                                                  backgroundImage: AssetImage("assets/images/imagess.png"),
+                                                  backgroundColor: Colors.transparent,
                                                 ),
-                                              ),
-                                            ],
-                                          )
-                                          ,
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              SizedBox(height: 10,),
-                              Container(
-                                height: 210,
-                                width: 189,
-                                decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(22)
-                                ),
-                                child:Stack(
-                                  children: [
-
-                                    Positioned.fill(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(22),
-                                        child: Image.asset(
-                                          "assets/images/second.png",
-                                          fit: BoxFit.cover,
+                                                SizedBox(width: 8),
+                                                Text(
+                                                  "Jessica Roy",
+                                                  style: TextStyle(
+                                                    fontSize: 14,
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ],
+                                            )
+                                            ,
+                                          ],
                                         ),
                                       ),
-                                    ),
-                                    Positioned(
-                                      bottom: 8,
-                                      left: 8,
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                            "Vocabulary 101",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 16,
-                                            ),
-                                          ),
-                                          SizedBox(height: 12),
-                                          Row(
-                                            children: [
-                                              CircleAvatar(
-                                                radius: 20,
-                                                backgroundImage: AssetImage("assets/images/imagess.png"),
-                                              ),
-                                              SizedBox(width: 8),
-                                              Text(
-                                                "Jessica Roy",
-                                                style: TextStyle(
-                                                  fontSize: 14,
-                                                  color: Colors.white,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(width: 8,),
-                          Column(
-                            children: [
-                              Container(
-                                height: 210,
-                                width: 189,
-                                decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(22)
-                                ),
-                                child:Stack(
-                                  children: [
+                                SizedBox(height: 10,),
+                                Container(
+                                  height: 210,
+                                  width: 189,
+                                  decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(22)
+                                  ),
+                                  child:Stack(
+                                    children: [
 
-                                    Positioned.fill(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(22),
-                                        child: Image.asset(
-                                          "assets/images/third.png",
-                                          fit: BoxFit.cover,
+                                      Positioned.fill(
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(22),
+                                          child: Image.asset(
+                                            "assets/images/second.png",
+                                            fit: BoxFit.cover,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    Positioned(
-                                      bottom: 8,
-                                      left: 8,
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                            "Vocabulary 101",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 16,
+                                      Positioned(
+                                        bottom: 8,
+                                        left: 8,
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "Vocabulary 101",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 16,
+                                              ),
                                             ),
-                                          ),
-                                          SizedBox(height: 12),
-                                          Row(
-                                            children: [
-                                              CircleAvatar(
-                                                radius: 20,
-                                                backgroundImage: AssetImage("assets/images/imagess.png"),
-                                              ),
-                                              SizedBox(width: 8),
-                                              Text(
-                                                "Jessica Roy",
-                                                style: TextStyle(
-                                                  fontSize: 14,
-                                                  color: Colors.white,
+                                            SizedBox(height: 12),
+                                            Row(
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 20,
+                                                  backgroundImage: AssetImage("assets/images/imagess.png"),
                                                 ),
-                                              ),
-                                            ],
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              SizedBox(height: 12,),
-                              Container(
-                                height: 268,
-                                width: 189,
-                                decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(22)
-                                ),
-                                child:Stack(
-                                  children: [
-
-                                    Positioned.fill(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(22),
-                                        child: Image.asset(
-                                          "assets/images/four.png",
-                                          fit: BoxFit.cover,
+                                                SizedBox(width: 8),
+                                                Text(
+                                                  "Jessica Roy",
+                                                  style: TextStyle(
+                                                    fontSize: 14,
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ],
                                         ),
                                       ),
-                                    ),
-                                    Positioned(
-                                      bottom: 8,
-                                      left: 8,
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                            "Vocabulary 101",
-                                            style: TextStyle(
-                                              color: Colors.white70,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 18,
-                                            ),
-                                          ),
-                                          SizedBox(height: 12),
-                                          Row(
-                                            children: [
-                                              CircleAvatar(
-                                                radius: 20,
-                                                backgroundImage: AssetImage("assets/images/imagess.png"),
-                                                backgroundColor: Colors.transparent,
-                                              ),
-                                              SizedBox(width: 8),
-                                              Text(
-                                                "Jessica Roy",
-                                                style: TextStyle(
-                                                  fontSize: 18,
-                                                  color: Colors.white,
-                                                ),
-                                              ),
-                                            ],
-                                          )
-                                          ,
-                                        ],
-                                      ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ) ,
-                      SizedBox(height: 8,),
-                      Row(
-                        children: [
-                          Column(
-                            children: [
-                              Container(
-                                height: 268,
-                                width: 189,
-                                decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(22)
-                                ),
-                                child:Stack(
-                                  children: [
+                              ],
+                            ),
+                            SizedBox(width: 8,),
+                            Column(
+                              children: [
+                                Container(
+                                  height: 210,
+                                  width: 189,
+                                  decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(22)
+                                  ),
+                                  child:Stack(
+                                    children: [
 
-                                    Positioned.fill(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(22),
-                                        child: Image.asset(
-                                          "assets/images/firsts.png",
-                                          fit: BoxFit.cover,
+                                      Positioned.fill(
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(22),
+                                          child: Image.asset(
+                                            "assets/images/third.png",
+                                            fit: BoxFit.cover,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    Positioned(
-                                      bottom: 8,
-                                      left: 8,
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                            "Vocabulary 101",
-                                            style: TextStyle(
-                                              color: Colors.white70,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 18,
+                                      Positioned(
+                                        bottom: 8,
+                                        left: 8,
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "Vocabulary 101",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 16,
+                                              ),
                                             ),
-                                          ),
-                                          SizedBox(height: 12),
-                                          Row(
-                                            children: [
-                                              CircleAvatar(
-                                                radius: 20,
-                                                backgroundImage: AssetImage("assets/images/imagess.png"),
-                                                backgroundColor: Colors.transparent,
-                                              ),
-                                              SizedBox(width: 8),
-                                              Text(
-                                                "Jessica Roy",
-                                                style: TextStyle(
-                                                  fontSize: 18,
-                                                  color: Colors.white,
+                                            SizedBox(height: 12),
+                                            Row(
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 20,
+                                                  backgroundImage: AssetImage("assets/images/imagess.png"),
                                                 ),
-                                              ),
-                                            ],
-                                          )
-                                          ,
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              SizedBox(height: 10,),
-                              Container(
-                                height: 210,
-                                width: 189,
-                                decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(22)
-                                ),
-                                child:Stack(
-                                  children: [
-
-                                    Positioned.fill(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(22),
-                                        child: Image.asset(
-                                          "assets/images/second.png",
-                                          fit: BoxFit.cover,
+                                                SizedBox(width: 8),
+                                                Text(
+                                                  "Jessica Roy",
+                                                  style: TextStyle(
+                                                    fontSize: 14,
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ],
                                         ),
                                       ),
-                                    ),
-                                    Positioned(
-                                      bottom: 8,
-                                      left: 8,
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                            "Vocabulary 101",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 16,
-                                            ),
-                                          ),
-                                          SizedBox(height: 12),
-                                          Row(
-                                            children: [
-                                              CircleAvatar(
-                                                radius: 20,
-                                                backgroundImage: AssetImage("assets/images/imagess.png"),
-                                              ),
-                                              SizedBox(width: 8),
-                                              Text(
-                                                "Jessica Roy",
-                                                style: TextStyle(
-                                                  fontSize: 14,
-                                                  color: Colors.white,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(width: 8,),
-                          Column(
-                            children: [
-                              Container(
-                                height: 210,
-                                width: 189,
-                                decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(22)
-                                ),
-                                child:Stack(
-                                  children: [
+                                SizedBox(height: 12,),
+                                Container(
+                                  height: 268,
+                                  width: 189,
+                                  decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(22)
+                                  ),
+                                  child:Stack(
+                                    children: [
 
-                                    Positioned.fill(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(22),
-                                        child: Image.asset(
-                                          "assets/images/third.png",
-                                          fit: BoxFit.cover,
+                                      Positioned.fill(
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(22),
+                                          child: Image.asset(
+                                            "assets/images/four.png",
+                                            fit: BoxFit.cover,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    Positioned(
-                                      bottom: 8,
-                                      left: 8,
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                            "Vocabulary 101",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 16,
+                                      Positioned(
+                                        bottom: 8,
+                                        left: 8,
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "Vocabulary 101",
+                                              style: TextStyle(
+                                                color: Colors.white70,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                              ),
                                             ),
-                                          ),
-                                          SizedBox(height: 12),
-                                          Row(
-                                            children: [
-                                              CircleAvatar(
-                                                radius: 20,
-                                                backgroundImage: AssetImage("assets/images/imagess.png"),
-                                              ),
-                                              SizedBox(width: 8),
-                                              Text(
-                                                "Jessica Roy",
-                                                style: TextStyle(
-                                                  fontSize: 14,
-                                                  color: Colors.white,
+                                            SizedBox(height: 12),
+                                            Row(
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 20,
+                                                  backgroundImage: AssetImage("assets/images/imagess.png"),
+                                                  backgroundColor: Colors.transparent,
                                                 ),
-                                              ),
-                                            ],
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              SizedBox(height: 12,),
-                              Container(
-                                height: 268,
-                                width: 189,
-                                decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(22)
-                                ),
-                                child:Stack(
-                                  children: [
-
-                                    Positioned.fill(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(22),
-                                        child: Image.asset(
-                                          "assets/images/four.png",
-                                          fit: BoxFit.cover,
+                                                SizedBox(width: 8),
+                                                Text(
+                                                  "Jessica Roy",
+                                                  style: TextStyle(
+                                                    fontSize: 18,
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ],
+                                            )
+                                            ,
+                                          ],
                                         ),
                                       ),
-                                    ),
-                                    Positioned(
-                                      bottom: 8,
-                                      left: 8,
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                            "Vocabulary 101",
-                                            style: TextStyle(
-                                              color: Colors.white70,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 18,
-                                            ),
-                                          ),
-                                          SizedBox(height: 12),
-                                          Row(
-                                            children: [
-                                              CircleAvatar(
-                                                radius: 20,
-                                                backgroundImage: AssetImage("assets/images/imagess.png"),
-                                                backgroundColor: Colors.transparent,
-                                              ),
-                                              SizedBox(width: 8),
-                                              Text(
-                                                "Jessica Roy",
-                                                style: TextStyle(
-                                                  fontSize: 18,
-                                                  color: Colors.white,
-                                                ),
-                                              ),
-                                            ],
-                                          )
-                                          ,
-                                        ],
-                                      ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ) ,
-                    ],
+                              ],
+                            ),
+                          ],
+                        ) ,
+                        SizedBox(height: 8,),
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Container(
+                                  height: 268,
+                                  width: 189,
+                                  decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(22)
+                                  ),
+                                  child:Stack(
+                                    children: [
+
+                                      Positioned.fill(
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(22),
+                                          child: Image.asset(
+                                            "assets/images/firsts.png",
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned(
+                                        bottom: 8,
+                                        left: 8,
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "Vocabulary 101",
+                                              style: TextStyle(
+                                                color: Colors.white70,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                              ),
+                                            ),
+                                            SizedBox(height: 12),
+                                            Row(
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 20,
+                                                  backgroundImage: AssetImage("assets/images/imagess.png"),
+                                                  backgroundColor: Colors.transparent,
+                                                ),
+                                                SizedBox(width: 8),
+                                                Text(
+                                                  "Jessica Roy",
+                                                  style: TextStyle(
+                                                    fontSize: 18,
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ],
+                                            )
+                                            ,
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(height: 10,),
+                                Container(
+                                  height: 210,
+                                  width: 189,
+                                  decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(22)
+                                  ),
+                                  child:Stack(
+                                    children: [
+
+                                      Positioned.fill(
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(22),
+                                          child: Image.asset(
+                                            "assets/images/second.png",
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned(
+                                        bottom: 8,
+                                        left: 8,
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "Vocabulary 101",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 16,
+                                              ),
+                                            ),
+                                            SizedBox(height: 12),
+                                            Row(
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 20,
+                                                  backgroundImage: AssetImage("assets/images/imagess.png"),
+                                                ),
+                                                SizedBox(width: 8),
+                                                Text(
+                                                  "Jessica Roy",
+                                                  style: TextStyle(
+                                                    fontSize: 14,
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(width: 8,),
+                            Column(
+                              children: [
+                                Container(
+                                  height: 210,
+                                  width: 189,
+                                  decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(22)
+                                  ),
+                                  child:Stack(
+                                    children: [
+
+                                      Positioned.fill(
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(22),
+                                          child: Image.asset(
+                                            "assets/images/third.png",
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned(
+                                        bottom: 8,
+                                        left: 8,
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "Vocabulary 101",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 16,
+                                              ),
+                                            ),
+                                            SizedBox(height: 12),
+                                            Row(
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 20,
+                                                  backgroundImage: AssetImage("assets/images/imagess.png"),
+                                                ),
+                                                SizedBox(width: 8),
+                                                Text(
+                                                  "Jessica Roy",
+                                                  style: TextStyle(
+                                                    fontSize: 14,
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(height: 12,),
+                                Container(
+                                  height: 268,
+                                  width: 189,
+                                  decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(22)
+                                  ),
+                                  child:Stack(
+                                    children: [
+
+                                      Positioned.fill(
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(22),
+                                          child: Image.asset(
+                                            "assets/images/four.png",
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned(
+                                        bottom: 8,
+                                        left: 8,
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "Vocabulary 101",
+                                              style: TextStyle(
+                                                color: Colors.white70,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                              ),
+                                            ),
+                                            SizedBox(height: 12),
+                                            Row(
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 20,
+                                                  backgroundImage: AssetImage("assets/images/imagess.png"),
+                                                  backgroundColor: Colors.transparent,
+                                                ),
+                                                SizedBox(width: 8),
+                                                Text(
+                                                  "Jessica Roy",
+                                                  style: TextStyle(
+                                                    fontSize: 18,
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ],
+                                            )
+                                            ,
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ) ,
+                      ],
+                    ),
                   )
                 ],
               ),
